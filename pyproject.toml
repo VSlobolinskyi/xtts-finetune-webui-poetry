@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "xtts-finetune-webui"
+version = "0.1.0"
+description = "A fine-tuning project for XTTS"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+
+# Install torch, torchaudio, and torchvision from custom URLs
+torch = { url = "https://download.pytorch.org/whl/cu118/torch-2.1.1%2Bcu118-cp311-cp311-win_amd64.whl#sha256=d99be44487d3ed0f7e6ef5d6689a37fb4a2f2821a9e7b59e7e04002a876a667a" }
+torchaudio = { url = "https://download.pytorch.org/whl/cu118/torchaudio-2.1.1%2Bcu118-cp311-cp311-win_amd64.whl#sha256=79b5afa556063be18de4a1964339242301fe04e782e1030a22695257dd9afbd2" }
+
+# Other ML-related dependencies
+faster_whisper = "0.10.0"
+gradio = "4.29.0"
+tts = "0.22.0"
+cutlet = "*"
+fugashi = { version = "*", extras = ["unidic-lite"] }
+fastapi = "0.112.2"
