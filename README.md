@@ -55,11 +55,9 @@ If you are looking for an option for normal XTTS use look here [https://github.c
 ## Install
 
 1. **Check if poetry is installed** `poetry --version`
-
-**If it isn't installed install poetry globally** `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python - `
-
-2. `git clone https://github.com/VSlobolinskyi/xtts-finetune-webui-poetry.git`
-3. `cd ./xtts-finetune-webui-poetry`
-4. `poetry install`
-5. In VSCode press CTRL+SHIFT+P -> Pyton:Slect Interpreter -> select your `: Poetry` project
-6. `poetry run python xtts_demo.py`
+2. **If it isn't installed install poetry globally** `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python - `
+3. `git clone https://github.com/VSlobolinskyi/xtts-finetune-webui-poetry.git`
+4. `cd ./xtts-finetune-webui-poetry`
+5. `poetry install`
+6. In VSCode press CTRL+SHIFT+P -> Pyton:Slect Interpreter -> select your `: Poetry` project
+7. `poetry run python xtts_demo.py`
