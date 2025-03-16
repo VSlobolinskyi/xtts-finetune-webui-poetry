@@ -1,4 +1,4 @@
-# xtts-finetune-webui
+# xtts-finetune-webui-poetry
 
 This webui is a slightly modified copy of the [official webui](https://github.com/coqui-ai/TTS/pull/3296) for finetune xtts.
 
@@ -58,7 +58,10 @@ If you are looking for an option for normal XTTS use look here [https://github.c
 2. **If it isn't installed install poetry globally** `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python - `
 3. `git clone https://github.com/VSlobolinskyi/xtts-finetune-webui-poetry.git`
 4. `cd ./xtts-finetune-webui-poetry`
-5. **Run this for windows machine** `poetry lock`
+5. **Run this for linux machines** `poetry lock`
 6. `poetry install`
 7. In VSCode press CTRL+SHIFT+P -> Pyton:Slect Interpreter -> select your `: Poetry` project
-8. `poetry run python xtts_demo.py`
+
+## Running The App
+
+`poetry run python xtts_demo.py`
